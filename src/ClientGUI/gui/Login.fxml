@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGUI.LoginController">
+   <children>
+      <AnchorPane prefHeight="110.0" prefWidth="750.0" style="-fx-background-color: #686868#686868;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="301.99999809265137">
+               <font>
+                  <Font name="Tahoma" size="34.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="userTextField" focusColor="BLACK" labelFloat="true" layoutX="100.0" layoutY="150.0" onAction="#UsernamePressedEnter" prefHeight="27.0" prefWidth="550.0" promptText="Username" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <JFXPasswordField fx:id="passField" focusColor="BLACK" labelFloat="true" layoutX="100.0" layoutY="220.0" onAction="#PasswordPressedEnter" prefHeight="27.0" prefWidth="550.0" promptText="Password" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="285.0" onAction="#LoginBtn" prefHeight="60.0" prefWidth="302.0" ripplerFill="WHITE" style="-fx-background-color: #686868#686868;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="224.0" AnchorPane.rightAnchor="224.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="errorLoginOutput" fill="RED" layoutX="228.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="293.21875" />
+      <JFXCheckBox fx:id="LoginRememberMe" checkedColor="#5a5a5a" layoutX="535.0" layoutY="327.0" selected="true" text="Remember Me" AnchorPane.rightAnchor="100.0" />
+   </children>
+</AnchorPane>
